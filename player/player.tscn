@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8ob7yeduaydu"]
+
+[ext_resource type="Script" path="res://player/player.gd" id="1_klwal"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_oocoa"]
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_klwal")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_oocoa")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = -10.0
+offset_top = -15.0
+offset_right = 10.0
+offset_bottom = 15.0

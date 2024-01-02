@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://43cq6hlespgl"]
+
+[ext_resource type="PackedScene" uid="uid://bk7hjh4q0snrp" path="res://walls/floor.tscn" id="1_j2iqp"]
+[ext_resource type="PackedScene" uid="uid://frrsqq4f3wrl" path="res://walls/roof.tscn" id="2_aof5o"]
+[ext_resource type="PackedScene" uid="uid://c8ob7yeduaydu" path="res://player/player.tscn" id="3_vy4n5"]
+
+[node name="GameScreen" type="Node2D"]
+
+[node name="Floor" parent="." instance=ExtResource("1_j2iqp")]
+position = Vector2(576, 616)
+
+[node name="Roof" parent="." instance=ExtResource("2_aof5o")]
+position = Vector2(576, 32)
+
+[node name="Player" parent="." instance=ExtResource("3_vy4n5")]
+position = Vector2(106, 533)

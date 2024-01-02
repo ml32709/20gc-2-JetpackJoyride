@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://frrsqq4f3wrl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pxp1q"]
+size = Vector2(1536, 64)
+
+[node name="Roof" type="StaticBody2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_pxp1q")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = -768.0
+offset_top = -32.0
+offset_right = 768.0
+offset_bottom = 32.0
